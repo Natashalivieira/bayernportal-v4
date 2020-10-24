@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import GlobalStyle from './globalStyles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import Navbar from './Components/Navbar/Navbar';
-import Header from './Components/Header/Header'
+import Navbar from './Components/Navbar/Navbar';
+// import Header from './Components/Header/Header'
 import ScrollToTop from './Components/ScrollToTop';
 import Home from './Pages/Home/Home';
 import "./App.css";
@@ -21,7 +21,8 @@ function App() {
     <Router>
       <GlobalStyle />
       <ScrollToTop />
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
       </Switch>

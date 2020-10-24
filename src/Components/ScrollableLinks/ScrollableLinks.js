@@ -91,7 +91,7 @@ export default function ScrollableTabsButtonAuto() {
 
         </Tabs>
       </AppBar>
-      <ScrollableLinks value={value} index={0}>
+      {/* <ScrollableLinks value={value} index={0}>
         <Dokumente />
       </ScrollableLinks>
       <ScrollableLinks value={value} index={1}>
@@ -120,7 +120,7 @@ export default function ScrollableTabsButtonAuto() {
       </ScrollableLinks>
       <ScrollableLinks value={value} index={9}>
         <Wohnen />
-      </ScrollableLinks>
+      </ScrollableLinks> */}
     </div>
   );
 }

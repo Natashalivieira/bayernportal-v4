@@ -1,8 +1,8 @@
 export const homeObjOne = {
     primary: true,
     lightBg: true,
-    lightTopLine: true,
-    lightText: true,
+    lightTopLine: false,
+    lightText: false,
     lightTextDesc: false,
     topLine: 'Ich suche nach',
     headline: 'Discover Services In Bavaria',

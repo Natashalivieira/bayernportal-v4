@@ -1,60 +1,44 @@
 import styled from 'styled-components';
+import Bayern from '../../Images/Bayern.jpg';
 
 export const InfoSec = styled.div`
-  padding: 10px 0;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-image: url(${Bayern});
+  background-size: cover;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    
+    }
   `;
 
 export const InfoRow = styled.div`
-  background: transparent;
   display: flex;
-  margin: 0 -5px 5px -5px;
   flex-wrap: wrap;
-  align-items: center;
-  /* flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')}; */
+  /* align-items: center; */
+  width: 100%;
+  margin-right: 5;
+  margin-left: 5;
+  margin-top: 15;
+  margin-bottom: 15;
+  justify-content: center;
   @media screen and (max-width: 1024px) {
-    max-width: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-  padding-left: 5px;
+    /* justify-content: center; */
+    margin-right: 5;
+  margin-left: 5;
   }
 `;
 
 export const InfoColumn = styled.div`
-  margin-bottom: 0px;
-  padding-right: 5px;
-  padding-left: 5px;
-  max-width: 50%;
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-right: 5px;
-  padding-left: 5px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    height: 150px;
     padding-right: 5px;
     padding-left: 5px;
-  }
-`;
-
-export const InfoColumn2 = styled.div`
-    /* background: #0099D5; */
-    padding-right: 5px;
-    padding-left: 5px;
-    max-width: 50%;
+    max-width: 100%;
+    background: #fff;
   @media screen and (max-width: 768px) {
     max-width: 100%;
     display: flex-wrap;
@@ -63,6 +47,8 @@ export const InfoColumn2 = styled.div`
     padding-left: 5px;
     padding-bottom: 40px;
     padding-top: 20px;
+    
+
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     max-width: 100%;
@@ -73,6 +59,40 @@ export const InfoColumn2 = styled.div`
     padding-top: 20px;
     padding-right: 5px;
     padding-left: 5px;
+    
+
+  }
+`;
+
+export const InfoColumn2 = styled.div`
+    /* background: #0099D5; */
+    height: 150px;
+    padding-right: 5px;
+    padding-left: 5px;
+    max-width: 100%;
+    background: #fff;
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    display: flex-wrap;
+    justify-content: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    
+
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+
   }
 `;
 
