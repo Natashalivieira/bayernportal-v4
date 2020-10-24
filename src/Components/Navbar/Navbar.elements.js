@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ export const Nav2 = styled.nav`
 export const NavbarContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 40px;
   ${Container}
 `;
 
@@ -40,17 +40,18 @@ export const NavbarContainer2 = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #0099D5;
+  color: #005D85;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.9rem;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 `;
 
 export const NavIcon = styled(BiExitFullscreen)`
-  margin-right: 0.1rem;
+  margin-right: 0rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -75,7 +76,7 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     position: absolute;
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
@@ -86,10 +87,10 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 90px;
-  border-bottom: 2px solid transparent;
+  height: 60px;
+  vertical-align: middle;
   &:hover {
-    border-bottom: 2px solid #0099D5;
+    /* border-bottom: 2px solid #0099D5; */
   }
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -124,11 +125,12 @@ export const NavItemBtn = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #0099D5;
+  color: #005D85;
   display: flex;
   align-items: right;
   text-decoration: none;
-  padding: 2rem 0.5rem;
+  padding: 2rem 0.3rem;
+  font-size: 1rem;
   height: 100%;
   @media screen and (max-width: 960px) {
     text-align: center;
@@ -145,17 +147,18 @@ export const NavLinks = styled(Link)`
 export const NavLinks2 = styled(Link)`
   color: #005D85;
   display: flex;
-  text-align: right;
+  align-items: right;
   text-decoration: none;
-  padding: 2rem 2rem;
+  padding: 1rem 0.4rem;
+  font-size: 1rem;
   height: 100%;
   @media screen and (max-width: 960px) {
-    text-align: right;
-    padding: 0.1rem;
+    text-align: center;
+    padding: 2rem;
     width: 100%;
     display: table;
     &:hover {
-      color: 'grey';
+      color: #0099D5;
       transition: all 0.3s ease;
     }
   }
