@@ -13,9 +13,11 @@ export const Container = styled.div`
   z-index: 1;
   background: '#fff';
   width: 100%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   /* margin-right: auto;
   margin-left: auto; */
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 65px;
   padding-left: 65px;
   @media screen and (max-width: 1024px) {

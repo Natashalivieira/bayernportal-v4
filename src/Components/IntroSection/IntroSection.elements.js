@@ -2,12 +2,11 @@ import styled from 'styled-components';
 import Digital from '../../Images/Digital3.jpg';
 
 export const InfoSec = styled.div`
-  padding: 200px 0;
-  background-image: url(${Digital});
-  background-size: cover;
+  padding: 90px 0;
+  background: #005D85;
   align-items: center;
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 50px 0;
 
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {

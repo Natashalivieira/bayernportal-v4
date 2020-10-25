@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 50px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,7 @@ export const NavMenu = styled.ul`
   align-items: right;
   list-style: none;
   text-align: right;
+  height: 60px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 60px;
+  height: 70px;
   vertical-align: middle;
   &:hover {
     /* border-bottom: 2px solid #0099D5; */
