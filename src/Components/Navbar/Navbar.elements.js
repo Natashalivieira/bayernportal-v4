@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   height: 40px;
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
   align-items: center;
   font-size: 1.2rem;
   top: 0;
@@ -72,14 +73,14 @@ export const NavMenu = styled.ul`
   align-items: right;
   list-style: none;
   text-align: right;
-  height: 60px;
+  height: 30px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     position: absolute;
-    top: 80px;
+    top: 50px;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
@@ -88,7 +89,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 70px;
+  height: 40px;
   vertical-align: middle;
   &:hover {
     /* border-bottom: 2px solid #0099D5; */
@@ -130,12 +131,12 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: right;
   text-decoration: none;
-  padding: 2rem 0.3rem;
+  padding: 1rem 0.3rem;
   font-size: 1rem;
   height: 100%;
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
     &:hover {
@@ -150,7 +151,10 @@ export const NavLinks2 = styled(Link)`
   display: flex;
   align-items: right;
   text-decoration: none;
-  padding: 1rem 0.4rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   font-size: 1rem;
   height: 100%;
   @media screen and (max-width: 960px) {

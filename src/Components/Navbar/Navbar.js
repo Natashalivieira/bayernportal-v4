@@ -123,18 +123,19 @@ function Navbar() {
             </NavLogo>
 
             <NavMenu>
-              {/* <NavItem>
+              <NavItem>
                 <NavLinks2>
                   <ForumIcon fontSize="small"/>BayernForum
                 </NavLinks2>
-              </NavItem> */}
+              </NavItem>
               <NavItem>
                 <NavLinks2>
-                {/* BayernID Login<ExitToAppIcon fontSize="small"/> */}
-                  <form className={classes.root2} noValidate autoComplete="off">
+                BayernID Login<ExitToAppIcon fontSize="small"/>
+                  
+                  {/* <form className={classes.root2} noValidate autoComplete="off">
                     <TextField id="outlined-basic" label="BayernID Login" variant="outlined" size="small" />
                     <ExitToAppIcon fontSize="small"/>
-                  </form>
+                  </form> */}
                 </NavLinks2>
               </NavItem>
             </NavMenu>
