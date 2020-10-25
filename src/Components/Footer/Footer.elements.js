@@ -3,7 +3,7 @@ import { BiExitFullscreen } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
-  background-color: #3f51b5;
+  background-color: #005D85;
   padding: 2rem 0 2rem 0;
   display: flex;
   flex-direction: column;

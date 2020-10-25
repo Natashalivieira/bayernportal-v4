@@ -78,16 +78,16 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label="Dokumente" {...a11yProps(0)} />
-          <Tab label="Ehrenamt" {...a11yProps(1)} />
-          <Tab label="Erwerbstätigkeit" {...a11yProps(2)} />
-          <Tab label="Familie und Kinder" {...a11yProps(3)} />
-          <Tab label="Freizeit" {...a11yProps(4)} />
-          <Tab label="Gesundheit" {...a11yProps(5)} />
-          <Tab label="Katastrophen-Hilfe" {...a11yProps(6)} />
-          <Tab label="Schule und Ausbildung" {...a11yProps(7)} />
-          <Tab label="Umwelt" {...a11yProps(8)} />
-          <Tab label="Wohnen" {...a11yProps(9)} />
+          <Tab label="Driver's License" {...a11yProps(0)} />
+          <Tab label="Tax" {...a11yProps(1)} />
+          <Tab label="Grants" {...a11yProps(2)} />
+          <Tab label="Child Care" {...a11yProps(3)} />
+          <Tab label="Schools" {...a11yProps(4)} />
+          <Tab label="Youth" {...a11yProps(5)} />
+          <Tab label="Voluntary Service" {...a11yProps(6)} />
+          <Tab label="Travelling" {...a11yProps(7)} />
+          <Tab label="Mobility" {...a11yProps(8)} />
+          <Tab label="Health and Welfare" {...a11yProps(9)} />
 
         </Tabs>
       </AppBar>

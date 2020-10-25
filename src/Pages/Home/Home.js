@@ -5,6 +5,7 @@ import ScrollableLinks from "../../Components/ScrollableLinks/ScrollableLinks";
 import IntroSection from "../../Components/IntroSection/IntroSection";
 import Services from "../../Components/Services/Services";
 import Updates from "../../Components/Updates/Updates";
+import News from "../../Components/News/News";
 import Footer from "../../Components/Footer/Footer";
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <IntroSection {...homeObjOne}/>
       <Services {...homeObjOne}/>
       <Updates {...homeObjOne}/>
+      <News {...homeObjOne}/>
       <Footer />
     </>
   );

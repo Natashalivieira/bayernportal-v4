@@ -25,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     justifyContent: 'center',
+    width: 430,
+  },
+  content2: {
+    justifyContent: 'center',
+    width: 590,
+    marginTop: theme.spacing(4),
+
   },
   title: {
     width: 200,
@@ -41,7 +48,20 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
       [theme.breakpoints.up('md')]: {
         // width: '100%',
-        width: '45.67ch',
+        width: '47ch',
+      },
+    },
+  },
+  root3: {
+    '& > *': {
+      marginLeft: theme.spacing(0),
+      marginRight: theme.spacing(1.5),
+      marginTop: theme.spacing(1),
+      // width: '40ch',
+      width: '100%',
+      [theme.breakpoints.up('md')]: {
+        // width: '100%',
+        width: '42.1ch',
       },
     },
   },
@@ -71,11 +91,23 @@ export default function SearchArea({primary}) {
                   I'm looking for
                 </Typography>
                 <Typography variant="subtitle1" color="textSecondary">
-                  What
+                  What 
                 </Typography>
                 <Typography>
                   <form className={classes.root2} noValidate autoComplete="off">
-                    <TextField id="outlined-basic" label="Search sector, organisation or keyword" variant="outlined" size="small" /><TextField id="outlined-basic" label="Enter location" variant="outlined" size="small"/><Button big fontBig primary={primary}>Search</Button>
+                    <TextField id="outlined-basic" label="Search sector, organisation or keyword" variant="outlined" size="small" />
+                  </form>
+                </Typography>
+            </CardContent>
+            <CardContent className={classes.content2}>
+                <Typography component="h6" variant="h6">
+                </Typography>
+                <Typography variant="subtitle1" color="textSecondary">
+                  Where 
+                </Typography>
+                <Typography>
+                  <form className={classes.root3} noValidate autoComplete="off">
+                    <TextField id="outlined-basic" label="Enter location" variant="outlined" size="small"/><Button big fontBig primary={primary}>Search</Button>
                   </form>
                 </Typography>
             </CardContent>

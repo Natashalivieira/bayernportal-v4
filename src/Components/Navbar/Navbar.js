@@ -8,7 +8,7 @@ import ForumIcon from '@material-ui/icons/Forum';
 import { IconContext } from 'react-icons/lib';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import Logo from '../../Images/Logo.jpg';
+import Logo from '../../Images/Logo.png';
 import TextField from '@material-ui/core/TextField';
 
 // import { Button } from '../../globalStyles';
@@ -81,7 +81,7 @@ function Navbar() {
             <NavLogo to='/' onClick={closeMobileMenu}>
               <NavIcon />
             </NavLogo>
-
+            
             <NavMenu>
               <NavItem>
                 <NavLinks>
@@ -117,9 +117,9 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <NavLogo to='/' onClick={closeMobileMenu}>
-              <img width="60px" src={Logo}/>
+              <img width="240px" src={Logo}/>
               <NavIcon />
-              BayernPortal
+              {/* BayernPortal */}
             </NavLogo>
 
             <NavMenu>

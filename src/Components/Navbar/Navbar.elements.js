@@ -5,7 +5,7 @@ import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
   background: #fff;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -73,12 +73,12 @@ export const NavMenu = styled.ul`
   align-items: right;
   list-style: none;
   text-align: right;
-  height: 30px;
+  height: 40px;
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     position: absolute;
     top: 50px;
     left: ${({ click }) => (click ? 0 : '-100%')};

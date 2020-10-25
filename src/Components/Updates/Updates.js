@@ -14,6 +14,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Update1 from '../../Images/Update1.jpg';
+import Update2 from '../../Images/Update2.jpg';
 
 import {
   InfoSec,
@@ -31,13 +33,13 @@ const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
         maxWidth: 400,
-        height: 400,
+        height: 380,
         backgroundColor: '#DAEEF9',
         padding: 10,
       },
     root2: {
         maxWidth: 345,
-        height: 400,
+        height: 380,
         paddingRight: 20,
       },
 }))
@@ -59,12 +61,15 @@ export default function Updates({}) {
             <CardActionArea>
                 <CardMedia
                 component="img"
-                alt="News1"
+                alt="Update1"
                 height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="News1"
+                image={Update1}
+                title="Update1"
                 />
                 <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                   12 Oct. 2020 | MedTech, Health, AI
+                </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
                     Online-Seminar Digital Health in Québec, Canada
                 </Typography>
@@ -86,12 +91,15 @@ export default function Updates({}) {
             <CardActionArea>
                 <CardMedia
                 component="img"
-                alt="News2"
+                alt="Update2"
                 height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                title="News2"
+                image={Update2}
+                title="Update2"
                 />
                 <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">
+                   5 Sep. 2020 | Economy, Technology, AI
+                </Typography>
                 <Typography gutterBottom variant="h5" component="h2">
                     Bavarian virtual delegation at MTL: Digital Week
                 </Typography>
